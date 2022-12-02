@@ -6,6 +6,7 @@ import {
   cTop,
   ForEach,
   HStack,
+  Icon,
   ScrollView,
   Spacer,
   State,
@@ -14,6 +15,7 @@ import {
   TForm,
   UIButton,
   UIController,
+  UIIconClass,
   UIScene,
   VStack,
 } from "@tuval/forms";
@@ -83,8 +85,8 @@ private saveEdit(){
       VStack({ alignment: cTop, spacing: 20 })(
         Text("Rehber Uygulaması").fontSize(30).fontWeight("lighter"),
         HStack({ spacing: 20 })(
+           
           TextField()
-            //Icon("\\e7fd")
             .placeholder("Person Name")
             .onTextChange((value) => (this.rehberItem.textname = value)),
           TextField()
@@ -178,6 +180,8 @@ private saveEdit(){
           )
         ).background(Color.blue600)
       ).padding(50)
+      
+      
     );
   }
 }
